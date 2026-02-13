@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Utopia Games</title>
+<title>Vortex Games</title>
 
+<link rel="icon" type="image/png" href="images/vortex-icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,6 +16,9 @@
     <div class="moon"></div>
     <div class="glow-line"></div>
 </div>
+
+<div id="particles-js"></div>
+
 
 <nav>
     <h1>Vortex</h1>
@@ -53,6 +57,18 @@
                 <a class="play-button" href="games/basketbros/basketbros.html">Play</a>
             </div>
         </div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    size: { value: 3 },
+    move: { speed: 2 }
+  }
+});
+</script>
+
 
     </div>
 </section>
