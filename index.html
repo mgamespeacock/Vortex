@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utopia Games</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="videos/background.gif" type="video/gif">
+</video>
+
+<div class="background">
+    <div class="moon"></div>
+    <div class="glow-line"></div>
+</div>
+
+<nav>
+    <h1>Vortex</h1>
+    <ul>
+        <li onclick="switchPage('home')">Home</li>
+        <li onclick="switchPage('games')">Games</li>
+        <li onclick="switchPage('about')">About</li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page active">
+    <h2>Play Away</h2>
+    <p>Enjoy limitless entertainment and games.</p>
+
+    <div class="console">
+        <div class="console-input">
+            <span>></span>
+            <input type="text" id="consoleInput" placeholder="Type anything and press Enter...">
+        </div>
+        <div class="console-output" id="consoleOutput"></div>
+    </div>
+</section>
+
+<!-- GAMES -->
+<section id="games" class="page">
+    <h2>Games Library</h2>
+
+    <div class="games-grid">
+
+        <div class="game-card">
+            <img src="images/basketbros.png" alt="Basket Bros">
+            <div class="game-info">
+                <h3>Basket Bros</h3>
+                <p>Make baskets with bros</p>
+                <a class="play-button" href="games/basketbros/basketbros.html">Play</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+    <h2>About Vortex</h2>
+    <p>Vortex is your portal to immersive unblocked browser games.</p>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
